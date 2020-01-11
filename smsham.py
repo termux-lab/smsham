@@ -6,7 +6,7 @@ banner = """
 |                                                    |
 | [--] Name: smsHam                                  |
 |                                                    |
-| [--] Created by: Termux-Lab                        |
+| [--] Made in: Termux-Lab                           |
 |                                                    |
 | [--] Vk channel: @termuxlab                        |
 |__________________|
