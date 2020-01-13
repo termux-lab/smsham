@@ -10,7 +10,7 @@ Vk: @termuxlab
 """
 
 print(banner)
-_phone = input('(79xxxxxxxxx)>> ')
+_phone = input('79xxxxxxxxx|>> ')
 
 if _phone[0] == '+':
 	_phone = _phone[1:]
