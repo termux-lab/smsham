@@ -1,5 +1,4 @@
 import requests, random, datetime, sys, time, argparse, os, colorama
-from colorama import Fore, Back, Style
 
 banner = """
                      smsHam
