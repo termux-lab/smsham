@@ -1,6 +1,6 @@
 import requests, random, datetime, sys, time, argparse, os, colorama
 
-banner = """\033[6
+banner = """\033[33
                      smsHam
                smsHam       smsHam
 	             smsHam
