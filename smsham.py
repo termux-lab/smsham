@@ -1,7 +1,7 @@
 import requests, random, datetime, sys, time, argparse, os, colorama
 
-banner = """\033[33m
-                     smsHam
+banner = """
+ \033[33m                    smsHam
                smsHam       smsHam
 	             smsHam
 Termux-Lab
