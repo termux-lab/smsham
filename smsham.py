@@ -1,10 +1,12 @@
 import requests, random, datetime, sys, time, argparse, os
 banner = """
-                     smsHam
-               smsHam       smsHam
-	             smsHam
-Termux-Lab
-Vk: @termuxlab
+███████████████████████████████
+█───█─███─█───█─██─█────█─███─█
+█─███──█──█─███─██─█─██─█──█──█
+█───█─█─█─█───█────█────█─█─█─█ Termux-Lab
+███─█─███─███─█─██─█─██─█─███─█ Vk: @termuxlab
+█───█─███─█───█─██─█─██─█─███─█
+███████████████████████████████
 """
 
 print(banner)
