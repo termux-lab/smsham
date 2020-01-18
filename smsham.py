@@ -1,4 +1,5 @@
 import requests, random, datetime, sys, time, argparse, os
+os.system("clear")
 banner = """
 ███████████████████████████████
 █───█─███─█───█─██─█────█─███─█
@@ -10,7 +11,7 @@ banner = """
 """
 
 print(banner)
-_phone = input('79xxxxxxxxx|>> ')
+_phone = input('(79xxxxxxxxx)>> ')
 
 if _phone[0] == '+':
 	_phone = _phone[1:]
