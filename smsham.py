@@ -1,5 +1,5 @@
 import requests, random, datetime, sys, time, argparse, os, colorama
-
+os.system("clear")
 banner = """\033[36m
 ╔═╗────╔═╗╔╗───────── (v. old)
 ║═╣╔══╗║═╣║╚╗╔═╗─╔══╗
