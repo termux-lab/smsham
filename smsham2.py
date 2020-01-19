@@ -134,3 +134,4 @@ while True:
 		print(('\033[F{}  Волна пройдена.           ').format(iteration))
 	except:
 		break
+ 
