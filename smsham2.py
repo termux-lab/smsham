@@ -1,7 +1,7 @@
 import requests, random, datetime, sys, time, argparse, os
 
 banner = """
-╔═╗────╔═╗╔╗─────────
+╔═╗────╔═╗╔╗───────── (v. old)
 ║═╣╔══╗║═╣║╚╗╔═╗─╔══╗
 ╠═║║║║║╠═║║║║║╬╚╗║║║║ Termux-Lab
 ╚═╝╚╩╩╝╚═╝╚╩╝╚══╝╚╩╩╝ Vk: @termuxlab
