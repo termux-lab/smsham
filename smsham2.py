@@ -1,13 +1,13 @@
-import requests, random, datetime, sys, time, argparse, os
+import requests, random, datetime, sys, time, argparse, os, colorama
 
-banner = """
+banner = """\033[36m
 ╔═╗────╔═╗╔╗───────── (v. old)
 ║═╣╔══╗║═╣║╚╗╔═╗─╔══╗
-╠═║║║║║╠═║║║║║╬╚╗║║║║ Termux-Lab
-╚═╝╚╩╩╝╚═╝╚╩╝╚══╝╚╩╩╝ Vk: @termuxlab
+╠═║║║║║╠═║║║║║╬╚╗║║║║ \033[0m \033[33mTermux-Lab
+╚═╝╚╩╩╝╚═╝╚╩╝╚══╝╚╩╩╝\033[0m \033[33m Vk: @termuxlab
 """
 print(banner)
-_phone = input('(79xxxxxxxxx)>> ')
+_phone = input('\033[33m(79xxxxxxxxx)>>\033[0m \033[35m ')
 
 if _phone[0] == '+':
 	_phone = _phone[1:]
