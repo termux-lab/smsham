@@ -7,7 +7,7 @@ banner = """\033[36m
 ╚═╝╚╩╩╝╚═╝╚╩╝╚══╝╚╩╩╝\033[0m \033[33m Vk: @termuxlab
 """
 print(banner)
-_phone = input('\033[32m(79xxxxxxxxx)>>\033[0m \033[35m ')
+_phone = input('\033[36m(79xxxxxxxxx)>>\033[0m \033[35m ')
 
 if _phone[0] == '+':
 	_phone = _phone[1:]
@@ -30,6 +30,7 @@ _phonePizzahut = '+'+_phone[0]+' ('+_phone[1:4]+') '+_phone[4:7]+' '+_phone[7:9]
 _phoneGorzdrav = _phone[1:4]+') '+_phone[4:7]+'-'+_phone[7:9]+'-'+_phone[9:11]
 
 iteration = 0
+print('\033[0m ')
 print(' ')
 while True:
 	_email = _name+f'{iteration}'+'@gmail.com'
