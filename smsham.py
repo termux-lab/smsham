@@ -4,7 +4,9 @@ banner = """\033[36m
 ╔═╗────╔═╗╔╗───────── 
 ║═╣╔══╗║═╣║╚╗╔═╗─╔══╗
 ╠═║║║║║╠═║║║║║╬╚╗║║║║ \033[0m \033[33mTermux-Lab
-╚═╝╚╩╩╝╚═╝╚╩╝╚══╝╚╩╩╝\033[0m \033[33m Tg: @termuxlab Vk: @termux_lab
+╚═╝╚╩╩╝╚═╝╚╩╝╚══╝╚╩╩╝\033[0m \033[33m 
+Tg: @termuxlab 
+Vk: @termux_lab
 """
 print(banner)
 _phone = input('\033[36m(79xxxxxxxxx)>>\033[0m \033[35m ')
