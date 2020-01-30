@@ -1,10 +1,10 @@
 import requests, random, datetime, sys, time, argparse, os, colorama
 os.system("clear")
 banner = """\033[36m
-╔═╗────╔═╗╔╗───────── (v. old)
+╔═╗────╔═╗╔╗───────── 
 ║═╣╔══╗║═╣║╚╗╔═╗─╔══╗
 ╠═║║║║║╠═║║║║║╬╚╗║║║║ \033[0m \033[33mTermux-Lab
-╚═╝╚╩╩╝╚═╝╚╩╝╚══╝╚╩╩╝\033[0m \033[33m Vk: @termuxlab
+╚═╝╚╩╩╝╚═╝╚╩╝╚══╝╚╩╩╝\033[0m \033[33m Tg: @termuxlab Vk: @termux_lab
 """
 print(banner)
 _phone = input('\033[36m(79xxxxxxxxx)>>\033[0m \033[35m ')
