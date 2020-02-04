@@ -6,7 +6,7 @@ banner = """\033[33m
  █   ███       █
  █   ██▄       █\033[37m  Termux-Lab\033[33m
  █    ▀██▄ ██  █\033[37m  Vk: @termux_lab\033[33m
- █      ▀███▀  ██\033[37m  Tg: t.me/termuxlab\033[33m
+ █      ▀███▀  █\033[37m  Tg: t.me/termuxlab\033[33m
  ▀█▄         ▄█▀
   ▄█   ▄▄▄▄█▀▀
   █  ▄█▀
