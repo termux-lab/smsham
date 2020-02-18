@@ -9,7 +9,7 @@ Tg: @termuxlab
 Vk: @termux_lab
 """
 print(banner)
-_phone = input('\033[36m(79XXXXXXXXX)>>\033[0m \033[35m ')
+_phone = input('\033[36m   [79XXXXXXXXX]>>\033[0m \033[35m ')
 
 if _phone[0] == '+':
 	_phone = _phone[1:]
