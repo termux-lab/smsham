@@ -32,7 +32,7 @@ try:
 except:
     print("Укажите номер телефона")
     phone = input("$ python smsham.py +")
-    _phone = phone
+_phone = phone
 np = "\033[37m\033[47m_\033[0m"
 np2 = "\033[47m_____\033[30m                         \033[0m\033[44m\033[34m_ \033[0m"
 os.system("clear")
