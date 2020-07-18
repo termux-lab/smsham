@@ -1,4 +1,5 @@
 import os, sys, time, requests
+_name = ""
 sms = [
 """
 [sms]🡆        [phone]
